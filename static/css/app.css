@@ -1,9 +1,9 @@
 :root {
-    --bg-body: #fafbfd;
-    --bg-content: #ffffff;
-    --bg-hover: #f4f4f4;
+    --bg-body: #F6F5F5;
+    --bg-content: #D3E0EA;
+    --bg-hover: #1687A7;
 
-    --color-txt: #172b4d;
+    --color-txt: #276678;
 
     --nav-height: 70px;
 
@@ -11,11 +11,11 @@
 }
 
 .dark {
-    --bg-body: #151515;
-    --bg-content: #242526;
-    --bg-hover: #151f28;
+    --bg-body: #191919;
+    --bg-content: #2D4263;
+    --bg-hover: #C84B31;
 
-    --color-txt: #dcdcdc;
+    --color-txt: #ECDBBA;
 }
 
 * {
@@ -75,7 +75,7 @@ body {
     color: red;
 }
 
-.darkmode-switch {
+#darkmode-switch {
     --width: 60px;
     --height: 20px;
     width: var(--width);
@@ -87,7 +87,7 @@ body {
 
 }
 
-.darkmode-switch span {
+#darkmode-switch span {
     display: inline-grid;
     place-items: center;
     height: calc(var(--height) * 2);
@@ -102,24 +102,24 @@ body {
     transition: left 0.3s ease-in-out;
 }
 
-.darkmode-switch.dark span {
+#darkmode-switch.dark span {
     left: calc(var(--width) - var(--height)*2);
     background-color: var(--bg-body);
     columns: var(--color-txt);
 }
 
-.darkmode-switch span .bxs-moon {
+#darkmode-switch span .bxs-moon {
     display: none;
 
 
 }
 
-.darkmode-switch.dark span .bxs-moon {
+#darkmode-switch.dark span .bxs-moon {
     display: inline-block;
     
 }
 
-.darkmode-switch.dark span .bxs-sun {
+#darkmode-switch.dark span .bxs-sun {
     display: none;
     
 
@@ -128,10 +128,11 @@ body {
 .box {
     width: 100%;
     border-radius: 10px;
-    background-color: var(--bg-content);
+    background-color: var(--bg-body);
     box-shadow: var(--shadow);
     padding: 15px;
     margin-bottom: 30px;
+    
 }
 
 .dark .box {
@@ -267,17 +268,19 @@ body {
 
 .count-death .count-icon {
     background-color: #485561;
-    color: #151515;
+    color: #777;
 }
 
 .count-death .count-info h5 {
-    color: #151515;
+    color: #777;
 
 }
 
 .table-countries {
     width: 100%;
     border-spacing: 0;
+    overflow-x:auto;
+    overflow-y:auto;
 }
 
 .table-countries thead tr th,
@@ -330,3 +333,10 @@ body {
     padding: 2rem;
     
 }
+
+@media only screen and (max-width: 850px) {
+    body {
+        font-size: 10px;
+    }
+}
+

@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Covid tracking app</title>
-    <link rel= "stylesheet" href = "static/css/grid.css"/>
-    <link rel = "stylesheet" href = "static/css/app.css"/>
+    
+    
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet"/>
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'/>
+    <link rel = "stylesheet" href = "static/css/app.css"/>
+    <link rel= "stylesheet" href = "static/css/grid.css"/>
     
 
 </head>
@@ -22,7 +25,7 @@
                 <a href="" class="logo">
                     Covid tracker
                 </a>
-                <div class="darkmode-switch">
+                <div id="darkmode-switch">
                    <span>
                        <i class = "bx bxs-moon"></i>
                        <i class = "bx bxs-sun"></i>
@@ -37,7 +40,7 @@
         <div class="container">
             <!-- country select -->
             <div class="row">
-                <div class="col-3 col-md-6 col-sm-12">
+                <div class="col-6 col-md-6 col-sm-12">
                     <div class="box">
                         <div class="country-select" id="country-select">
                             <div class="country-select-toggle" id="country-select-toggle">
@@ -58,10 +61,10 @@
             <!-- tracking information -->
             <div class="row">
                 <!-- left content -->
-                <div class="col-8 col-md-12 col-sm-12">
+                <div class="col-12 col-md-12 col-sm-12">
                     <div class="row">
                         <!-- counter -->
-                        <div class="col-4 col-md-4 col-sm-12">
+                        <div class="col-12 col-md-4 col-sm-12">
                             <div class="box box-hover">
                                 <div class="count count-confirmed">
                                     <div class="count-icon">
@@ -76,7 +79,7 @@
                         </div>
                         <!-- counter -->
                         <!-- counter -->
-                        <div class="col-4 col-md-4 col-sm-12">
+                        <div class="col-12 col-md-4 col-sm-12">
                             <div class="box box-hover">
                                 <div class="count count-recovered">
                                     <div class="count-icon">
@@ -91,7 +94,7 @@
                         </div>
                         <!-- counter -->
                         <!-- counter -->
-                        <div class="col-4 col-md-4 col-sm-12">
+                        <div class="col-12 col-md-4 col-sm-12">
                             <div class="box box-hover">
                                 <div class="count count-death">
                                     <div class="count-icon">
@@ -120,7 +123,7 @@
                         <!-- end all time chart -->
 
                         <!-- embed video -->
-                        <div class="col-6 col-md-6 col-sm-12">
+                        <div class="col-12 col-md-6 col-sm-12">
                             <div class="box">
                                 <div class="box-header">
                                     what is covid-19
@@ -133,7 +136,7 @@
                         <!-- end embed video -->
 
                         <!-- embed video -->
-                        <div class="col-6 col-md-6 col-sm-12">
+                        <div class="col-12 col-md-6 col-sm-12">
                             <div class="box">
                                 <div class="box-header">
                                     how to protect yourself
@@ -149,7 +152,7 @@
                 <!-- end left content -->
 
                 <!-- right content -->
-                <div class="col-4 col-md-12 col-sm-12">
+                <div class="col-12 col-md-12 col-sm-12">
                     <!-- 30 days chart -->
                     <div class="box">
                         <div class="box-header">

@@ -1,6 +1,12 @@
 const covidApi = {
     getSummary: async () => {
         return await fetchRequest(covidApiEndPoint.summary())
+    },
+    getWorldAllTimeCases: async () => {
+        return await fetchRequest(covidApiEndPoint.worldAllTimeCases())
+    },
+    getCountryAllTimeCases: async (country, status) => {
+        return await fetchRequest(covidApiEndPoint.countryAllTimeCases(country, status))
     }
 }
 
@@ -11,7 +17,7 @@ const covidApiEndPoint = {
         return getApiPath('summary')
     },
     worldAllTimeCases: () => {
-        return getAPIPath('world')
+        return getApiPath('world')
     },
     countryAllTimeCases: (country,status) => {
         let end_point = `dayone/country/${country}/status/${status}`
