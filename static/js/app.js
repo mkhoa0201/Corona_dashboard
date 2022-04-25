@@ -22,9 +22,11 @@ window.onload = async () => {
     // only init chart on page loaded first time
 
     initTheme()
+    initContryFilter()
 
     await initAllTimesChart()
     await loadData('Global')
+    await loadCountrySelectList()
 
     document.querySelector('#country-select-toggle').onclick = () => {
         document.querySelector('#country-select-list').classList.toggle('active')
@@ -40,7 +42,7 @@ loadData = async(country) => {
 
     await loadAllTimeChart(country)
 
-    await loadCountrySelectList()
+    
 
     endLoading()
 }

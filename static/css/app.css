@@ -68,7 +68,9 @@ body {
     color: var(--color-txt);
     font-size: 2rem;
     font-weight: 900;
-
+}
+.logo:hover {
+    text-decoration: none;
 }
 
 .logo i {
